@@ -1,6 +1,8 @@
 {
     "extends": "airbnb-base",
     "rules": {
-        "no-console": "off"
+        "no-console": "off",
+        "no-constant-condition": "off",
+        "implicit-arrow-linebreak": "off"
     }
 }
