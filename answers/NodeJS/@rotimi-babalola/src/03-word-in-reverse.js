@@ -1,6 +1,5 @@
 const readLineSync = require('readline-sync');
 
-// eslint-disable-next-line no-constant-condition
 while (true) {
   const string = readLineSync.question('Please enter a string: ');
 
