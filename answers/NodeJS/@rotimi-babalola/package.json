@@ -6,6 +6,27 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*{.js,jsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "author": "Rotimi Babalola",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^2.4.1",
+    "lint-staged": "^8.2.1"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
