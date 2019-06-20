@@ -9,13 +9,12 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
-  background-color: #ddd;
   width: 100%;
   height: 100%;
   padding: 1rem;
 }
 
-.App > div {
+.App > a {
   border: 3px solid #0b0b0b;
   cursor: pointer;
   background-color: #f7f7f7;
@@ -28,9 +27,11 @@
   transition: all 1s;
   text-transform: capitalize;
   padding: 1rem;
+  text-decoration: none;
+  color: #000;
 }
 
-.App > div:hover {
+.App > a:hover {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.3rem;
@@ -42,7 +43,6 @@
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 body {
@@ -50,13 +50,14 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 1rem;
-  background-color: rgb(55, 142, 212);
+  background-color: #D5DDBC;
 }
 
 .layout {
   background: #fff;
   padding: 1rem;
   width: 100%;
+  min-height: 60vh;
   font-size: 1.5rem;
   display: flex;
   flex-direction: column;
@@ -70,13 +71,15 @@ body {
   margin-bottom: 1rem;
   padding: 1rem;
   display: flex;
-  justify-content: flex-end;
+  text-decoration: underline;
 }
 
-.navigation > span {
+.navigation > a {
   cursor: pointer;
   font-weight: bold;
-  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.4rem;
 }
 
 .layout-container {
@@ -95,6 +98,7 @@ button {
   background-color: beige;
   border: 2px solid black;
   outline: 0;
+  margin-top: 10px;
   cursor: pointer;
 }
 
@@ -116,4 +120,21 @@ table, th, td {
 
 th, td {
   padding: 10px;
+}
+
+.question {
+  margin: 1rem 0;
+  width: 100%;
+  min-height: 6rem;
+  background: #FFF;
+  padding: 1rem;
+}
+
+.attendance {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-right: 10rem;
 }

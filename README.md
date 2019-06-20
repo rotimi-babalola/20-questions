@@ -8,6 +8,8 @@ Each question will require a practical solution, and the concepts you're expecte
 
 > This is not an list of algorithm exercises.
 
+See [answers](./answers).
+
 Find the questions below:
 
 ## 1. Name Concatenation
@@ -198,3 +200,5 @@ Let the user input either `yes` or `no`.
 ## 20. Love Calculator
 
 Write a love calculator program that calculates a love percentage, using two names. [See More](./programming/20-love-calculator.md).
+
+looking to contribute? checkout the [contributing guide](contributing.md)

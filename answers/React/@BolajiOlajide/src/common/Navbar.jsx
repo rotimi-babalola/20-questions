@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Navbar({ setPage }) {
-  return <nav className="navigation">
-    <span onClick={() => setPage('home')}>Go Home!</span>
-  </nav>
+function Navbar() {
+  return (
+    <nav className="navigation">
+      <Link to="/">Home</Link>
+    </nav>
+  );
 }
 
 export default Navbar;
