@@ -4,6 +4,7 @@
         "no-console": "off",
         "no-constant-condition": "off",
         "implicit-arrow-linebreak": "off",
-        "no-plusplus": "off"
+        "no-plusplus": "off",
+        "arrow-parens": "off"
     }
 }
