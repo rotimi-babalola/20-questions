@@ -5,7 +5,9 @@ const MID_EARNER = 200000;
 
 while (true) {
   const salary = readLineSync.questionFloat('Please enter your salary: ');
-  if (salary < BASIC_EARNER) {
+  if (salary < 0) {
+    console.log('Enter a number greater than zero');
+  } else if (salary < BASIC_EARNER) {
     const tax = (5 / 100) * salary;
     console.log(`Tax: ${tax}`);
   } else if (salary < MID_EARNER) {
